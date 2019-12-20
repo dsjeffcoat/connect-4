@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    color: white;
+    
+}
+p {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+body{
+background-image: url(marc-schulte-D4ctZEF3Te4-unsplash.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+ 
+       
+.piece {
+height: 66px;
+width: 66px;
+display:block;
+border-radius: 16px;
+margin-left: auto;
+margin-right: auto;
+        }
+        
+.player0 {
+background-color: #DDDDDD;
+ }
+        
+ .player1 {
+ background-color: #FF0000;
+}
+        
+.player2 {
+background-color: #0000FF;	
+}
+        
+.board_square {
+border: 1px solid #bbb8b8;
+height: 70px;
+width: 70px;
+margin-top: 20px;
+        }
+
+#beginBattle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 62, 88);
+    height: 70px;
+    width: 150px;
+    border: none;
+    font-weight: 50px;
+    font-size: 15px;
+    position: absolute;
+    left: 250px;
+    bottom: 400px;
+}
+
+#game_table {
+    display: flex;
+    justify-content: center;
+}
+
+.drop {
+    width: 70px;
+}
+
+#game_info {
+    color: white;
+    position: absolute;
+    left: 458px;
+    top: 145px;
+}
+
+.win {
+    position: absolute;
+}
+
+.lose{
+    position: absolute;
+}
