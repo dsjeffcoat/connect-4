@@ -1,13 +1,45 @@
+#music {
+    position:absolute;
+   top:0;
+   left:0;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.sliding-background {
+background: url("old-school-game-pattern-vector-3352696.jpg") repeat-x;
+height: 20px;
+width: 5076px;
+animation: slide 60s linear infinite;
+position: absolute;
+bottom: 0px;
+  }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+
+
 h1 {
     text-align: center;
     color: white;
-    
+    font-family: 'Geostar Fill', cursive;
 }
+
 p {
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 20px;
+    font-family: 'Press Start 2P';   
 }
+
 
 body{
 background-image: url(marc-schulte-D4ctZEF3Te4-unsplash.jpg);
@@ -20,10 +52,10 @@ background-attachment: fixed;
 height: 66px;
 width: 66px;
 display:block;
-border-radius: 16px;
+border-radius: 50px;
 margin-left: auto;
 margin-right: auto;
-        }
+}
         
 .player0 {
 background-color: #DDDDDD;
@@ -41,8 +73,18 @@ background-color: #0000FF;
 border: 1px solid #bbb8b8;
 height: 70px;
 width: 70px;
-margin-top: 20px;
-        }
+margin-top: 30px;
+}
+
+.buttonArea {
+    width: 72px;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    width: 50px;
+}
 
 #beginBattle {
     color: rgb(255, 255, 255);
@@ -59,18 +101,22 @@ margin-top: 20px;
 
 #game_table {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .drop {
     width: 70px;
 }
 
+#gameboard {
+    bottom: 50px;
+}
+
 #game_info {
     color: white;
-    position: absolute;
-    left: 458px;
-    top: 145px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .win {
@@ -80,3 +126,16 @@ margin-top: 20px;
 .lose{
     position: absolute;
 }
+
+.click_button {
+    height: 42px;
+    width: 42px;
+    border-radius: 24px;
+    background-color: rgba(255, 0, 0, 1);
+    cursor: pointer;
+}
+
+table {
+    margin: 0 auto;
+}
+
