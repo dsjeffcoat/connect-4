@@ -1,4 +1,3 @@
-
 /* set the global variables so we can use them wihin functions */
 var game_active = false; // this is a boolean (true/false values only).  This will be used to prevent being able to drop pieces once the game is over
 var active_player = 0; // the # of the active player - 1 or 2.  Default is 0, meaning no active player
@@ -122,7 +121,13 @@ function checkForWin() {
 /* endGame will end the game - any additional functions or things you want to happen when the game is over can go here */
 function endGame(winningPlayer) {
     game_active = false; //set the "game_active" to false, so that it can be started again.
-    document.getElementById('game_info').innerHTML = "Winner: " + winningPlayer; //set the "game_info" to the winner and the winning player #
+    if (winningPlayer !== 1 && winningPlayer !== 2) {
+        alert("It's a tie! You two need to start over!")
+    } else if (winningPlayer === 1) {
+        alert ("Player 1 has won the game!")
+    } else {
+        alert ("Player 2 has won the game!")
+    } 
 }
 
 /* setUpTurn will display who is the active player */
