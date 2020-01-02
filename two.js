@@ -121,12 +121,12 @@ function checkForWin() {
 /* endGame will end the game - any additional functions or things you want to happen when the game is over can go here */
 function endGame(winningPlayer) {
     game_active = false; //set the "game_active" to false, so that it can be started again.
-    if (winningPlayer !== 1 && winningPlayer !== 2) {
-        alert("It's a tie! You two need to start over!")
-    } else if (winningPlayer === 1) {
-        alert ("Player 1 has won the game!")
-    } else {
+    if (winningPlayer === 1) {
+        alert("Player 1 has won the game!")
+    } else if (winningPlayer === 2) {
         alert ("Player 2 has won the game!")
+    } else {
+        alert ("It's a tie! You two need to start over!")
     } 
 }
 
