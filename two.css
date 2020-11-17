@@ -107,6 +107,8 @@ margin-top: 30px;
 
 .drop {
     width: 70px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #gameboard {
