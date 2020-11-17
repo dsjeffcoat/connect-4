@@ -1,3 +1,11 @@
+/* Connect 4 - Star Wars Edition by Misty Pacaco, Diarte Jeffcoat & Zac Gerber */
+
+/* CSS assigned to Misty */
+
+/* :root {
+    box-sizing: border-box;
+} */
+
 #music {
     position:absolute;
    top:0;
@@ -105,10 +113,10 @@ margin-top: 30px;
     align-items: center;
 }
 
-.drop {
-    width: 70px;
+.btn__drop {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 70px;
 }
 
 #gameboard {
@@ -140,4 +148,3 @@ margin-top: 30px;
 table {
     margin: 0 auto;
 }
-

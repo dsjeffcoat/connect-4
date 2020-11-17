@@ -1,4 +1,9 @@
-/* set the global variables so we can use them wihin functions */
+// Connect 4 - Star Wars Edition: created by Misty Pacaco, Diarte Jeffcoat, & Zac Gerber
+
+// Coding Needs:
+// 1. Click handler for game board (Assigned to Diarte)
+// 2. Alert messages for wins/tie (Assigned to Zac)
+
 var game_active = false; // this is a boolean (true/false values only).  This will be used to prevent being able to drop pieces once the game is over
 var active_player = 0; // the # of the active player - 1 or 2.  Default is 0, meaning no active player
 var gameboard = []; // define the gameboard as an array.  We will later set it up as a multi-dimensional array, to represent the col/row value for the game board
